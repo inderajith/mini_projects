@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="http://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Loginpage</title>
+    <style>
+      .tabs .indicator {
+        background-color: #3399ff;
+      }
+      body {
+        align-items: right;
+      }
+      .nav-wrapper{
+        padding-left: 10px;
+        background: rgb(15, 223, 223);
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active{
+        background-color:#fff;
+      }
+    </style>
+  </head>
+  <body style="background-color: #fff">
+    <section class="fnavbar">
+
+      <nav class="nav-fixed">
+          <div class="nav-wrapper">
+            <div class="flexbox">
+              <a href="#" class="brand-logo"><i class="small material-icons icon-control_point pulse">fingerprint</i><i style="display: inline-block;">Maruthuvam</i></a>
+            </div>
+
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down " >
+              <li><a href="/" onclick="toggleModal();"><b>Home</b> </a></li>
+
+            </ul>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="/" onclick="toggleModal();"><b>Home</b> </a></li>
+
+        </ul>
+  </section>
+
+    <div class="row container padtop80" style="min-height: 100vh ; padding-top: 75px">
+      <div class="col m6 offset-m3 s12">
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs">
+              <li class="tab col s3">
+                <a href="#test1" class="active blue-text text-darken-4"
+                  >Login</a
+                >
+              </li>
+              <li class="tab col s3">
+                <a href="#test2" class="active blue-text text-darken-4"
+                  >Signup</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <form id="test1" class="col s12 padtop40">
+        <div class="col m6 offset-m3 s12 z-depth-1 padtop10">
+          <div class="lid">
+            <div class="input-field col s12 remx">
+              <input id="lmail" type="text" class="validate" required/>
+              <label for="lmail">Email-id</label>
+            </div>
+            <div class="input-field col s12 remx">
+              <input id="password" type="password" class="validate" required/>
+              <label for="password">Password</label>
+            </div>
+            <p class="padleft10 remx">
+              <input type="checkbox" id="test5"/>
+              <label for="test5">Remember Me</label>
+            </p>
+            <div class="padleft10 remx">
+              <button class="btn waves-effect waves-light log" type="submit" style="background-color: rgb(15,223,223); margin-bottom:20px;">Login</button>
+              <a href="#" class="blue-text text-darken-4" id="hider"
+                >Forgot my password?</a
+              >
+            </div>
+          </div>                  
+        </div>        
+      </form>
+
+  <!-- ---------------------------------------------------------------------- -->
+
+        <form id="test2" class="col s12 padtop40">
+        <div class="col m6 offset-m3 s12 z-depth-1 padtop10">
+          <div class="input-field col s12">
+            <input id="mail_id" type="text" class="validate" />
+            <label for="mail_id">Email ID* </label>
+          </div>
+          <div class="input-field col s12">
+            <input id="name" type="text" class="validate" />
+            <label for="name"> Name* </label>
+          </div>
+          <div class="input-field col s12">
+            <input id="mobile" type="text" class="validate" />
+            <label for="mobile">Mobile* </label>
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="Patient">Patient</option>
+              <option value="Doctor">Doctor</option>
+              <!-- <option value="3">Lab reporter</option> -->
+            </select>
+            <label>User type</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="password1" type="password" class="validate" />
+            <label for="password1">Password*</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="password2" type="password" class="validate" />
+            <label for="password2">Confirm Password*</label>
+          </div>
+
+          <p class="padleft10">
+            <input type="checkbox" id="test6" />
+            <label for="test6"
+              >I agree to the
+              <a href-="#" class="blue-text text-darken-4">'Maruthuvam</a>
+              <a href-="#" class="blue-text text-darken-4">Privacy Policy'</a
+              >.</label
+            >
+          </p>
+          <p class="padleft10">
+            <button type="submit" class=" btn" style="background-color: rgb(15,223,223);">Register</button>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.1.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".button-collapse").sideNav();
+        $(".dropdown-button").dropdown();
+        $("select").material_select();
+        $(".slider").slider({ full_width: true });
+        $(".button-collapse").sideNav();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".hid").hide();
+        $("#hider").click(function () {
+          $(".remx").hide();
+          $(".hid").show();
+        });
+        $("#cancll").click(function () {
+          $(".remx").show();
+          $(".hid").hide();
+        });
+        //$(".sidenav").sidenav();
+      
+
+      const reg = document.querySelector('#test1');
+            
+      reg.addEventListener('Submit', e => {
+        
+        console.log("hii");
+        console.log(e.target.value);
+      })
+    });      
+    </script>
+  </body>
+</html>

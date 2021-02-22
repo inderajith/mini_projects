@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style1.css" />
+
+    <title>Lab Reporter Dashboard</title>
+    <style>
+      .drag-target{
+        width: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav style="background-color: rgb(15, 223, 223)">
+      <div class="nav-fixed">
+        <a href="#!" class="brand-logo">Lab Reporter Dashboard</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="/">Home</a></li>
+    </ul>
+
+    <!-- --------------------------------------------------------------------------------------- -->
+    <div class="row container" style="margin-top: 100px">
+      <div class="col s12 l4 ">
+      <form>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate" />
+            <label for="icon_prefix">Patient ID</label>
+          </div>
+
+          <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea
+              id="textarea2"
+              class="materialize-textarea"
+              data-length="120"
+            ></textarea>
+            <label for="textarea2">Description</label>
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Choose the department</option>
+              <option value="neurology">Neurology</option>
+              <option value="Ophthalmology">Ophthalmology</option>
+              <option value="Neonatology">Neonatology</option>
+              <option value="Toracic Surgery">Toracic Surgery</option>
+              <option value="Plastic Surgery">Plastic Surgery</option>
+              <option value="Ortopedy">Ortopedy</option>
+            </select>
+            <label>department Select</label>
+          </div>
+          <div class="file-field input-field col s12">
+            <div class="btn" style="background-color: rgb(15, 223, 223)">
+              <span>File</span>
+              <input type="file" multiple />
+            </div>
+            <div class="file-path-wrapper">
+              <input
+                class="file-path validate"
+                type="text"
+                placeholder="Upload one or more files"
+              />
+            </div>
+          </div>
+          <button
+            class="btn waves-effect waves-light right"
+            style="background-color: rgb(15, 223, 223)"
+          >
+            Submit <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form></div>
+      <div class="col s4 l7 container">
+        <img class="circle img" width="500px" height="auto" src="./images/pexels-pixabay-356040.jpg"  style="padding: 5px;-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); margin: 0px 30px;">
+      </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+        $("input#input_text, textarea#textarea2").characterCounter();
+        $("select").formSelect();
+      });
+    </script>
+  </body>
+</html>

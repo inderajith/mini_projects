@@ -1,0 +1,163 @@
+
+<%- include('partials/header') %>
+
+<title>Maruthuvam</title>
+</head>
+<body>
+    <section class="fnavbar">
+
+        <nav class="nav-fixed">
+            <div class="nav-wrapper">
+              <div class="flexbox">
+                <a href="#" class="brand-logo"><i class="small material-icons icon-control_point pulse">fingerprint</i><i style="display: inline-block;">Maruthuvam</i></a>
+              </div>
+
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down " >
+                <li><a href="/" onclick="toggleModal();"><b>Home</b> </a></li>
+                <li><a href="#services" onclick="toggleModal();"><b>About Us</b> </a></li>
+                <li><a href="#contact" onclick="toggleModal();"><b>Contact</b> </a></li>
+                <!-- <li><a href="/labreporter" onclick="toggleModal();"><b>Lab Reporter</b> </a></li> -->
+                <li><a href="/search" onclick="toggleModal();"><b>Search</b> </a></li>
+                <li><a href="/doctordashboard" onclick="toggleModal();"><b>Doctor</b> </a></li>
+                <li><a href="/patientDashboard" onclick="toggleModal();"><b>Patient</b> </a></li>
+                <li><a href="/login" onclick="toggleModal();"><b>Login</b> </a></li>
+              </ul>
+          </nav>
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="/" onclick="toggleModal();"><b>Home</b> </a></li>
+            <li><a href="#services" onclick="toggleModal();"><b>About Us</b> </a></li>
+            <li><a href="#contact" onclick="toggleModal();"><b>Contact</b> </a></li>
+            <!-- <li><a href="/labreporter" onclick="toggleModal();"><b>Lab Reporter</b> </a></li> -->
+            <li><a href="/search" onclick="toggleModal();"><b>Search</b> </a></li>
+            <li><a href="/doctordashboard" onclick="toggleModal();"><b>Doctor</b> </a></li>
+            <li><a href="/patientDashboard" onclick="toggleModal();"><b>Patient</b> </a></li>
+            <li><a href="/login" onclick="toggleModal();"><b>Login</b> </a></li>
+          </ul>
+    </section>
+
+    <section class="fslider">
+      <div class="slider">
+          <ul class="slides">
+              <li>
+                  <img src="/images/pexels-jonathan-meyer-668298.jpg" alt="image one">
+                  <div class="caption center-align cyan-text text-darken-4">
+                      <h3 class="tcolor">Virtual Health Assistant</h3>
+                      <h5 class="light text-lighten-3 tcolor red-text text-darken-4">Better care and Better understanding</h5>
+                      <a class="waves-effect cyan btn" href="/search">Problem</a>
+                  </div>
+              </li>
+              <li>
+                  <img src="/images/pexels-anna-shvets-4167561.jpg" alt="image one" class="">
+                  <div class="caption center-align cyan-text text-darken-4">
+                      <h3 class="tcolor">Virtual Health Assistant</h3>
+                      <h5 class="light text-lighten-3 tcolor red-text text-darken-4">We provide one of the best services</h5>
+                      <a class="waves-effect cyan btn" href="#services">Services</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="description">
+    <div class="section white center">
+        <h2 class="header">Maruthuvam -Best Medical service providers</h2>
+        <div class="row container center">
+            <div class="col center l8 s12 move">
+              A health care provider is an individual health professional or a health facility organization licensed to provide health care diagnosis and treatment services including medication, surgery and medical devices. Health care providers often receive payments for their services rendered from health insurance providers.
+               <br>
+               The range of home health care services a patient can receive at home is limitless. Depending on the individual patient's situation, care can range from nursing care to specialized medical services, such as laboratory workups. You and your doctor will determine your care plan and services you may need at home. <br><br>
+              <b>VISION: </b><br>
+              Promote healthy human race supported by trusted ,patient centered platform <br>
+               <b>Mission:</b><br>
+              To enhance the health of the community we serve
+            </div>
+            <div class="col center l4 s12">
+                <img src="/images/pexels-gustavo-fring-4173251.jpg" style="object-fit: contain;"  height="275" width="auto" alt=""></div>
+        </div>
+    </div>
+</section>
+    <section class="fabout scrollspy" id="services">
+        <div class="section white center">
+            <div class="row ">
+                <h2 class="header">Our Services</h2>
+                <div class="row">
+                    <div class="col s6">
+                      <a class="btn-floating btn-large cyan "><i class="large material-icons icon-control_point">add_to_queue</i></a>
+                        <h5 class="header">Fixation of appointments</h5>
+
+                    </div>
+                    <div class="col s6">
+                      <a class="btn-floating btn-large cyan "><i class="large material-icons icon-control_point">airport_shuttle</i></a>
+                        <h5 class="header">24/7 Ambulance services</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s6">
+                      <a class="btn-floating btn-large cyan pulse"><i class="large material-icons icon-control_point pulse">local_phone</i></a>
+                        <h5 class="header">Emergency Call services</h5>
+                    </div>
+                    <div class="col s6">
+                      <a class="btn-floating btn-large cyan "><i class="large material-icons icon-control_point">invert_colors</i></a>
+                        <h5 class="header">Blood bank connectivity</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="container" style="padding: 100px 0px;">
+      <div class="video-container">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/Xphx_0K5Lzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+     </section>
+
+    <footer class="page-footer scrollspy" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Contact Us</h5>
+              <p class="grey-text text-lighten-4">
+                21 Greams Lane, Off, Greams Road, Thousand Lights, Chennai, Tamil Nadu 600006
+              </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Contact Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- M JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+    //$('.modal').modal();
+    $('.sidenav').sidenav();
+    $('.slider').slider({full_width:true});
+    $('.tabs').tabs();
+    $('.scrollspy').scrollSpy();
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+
+<%- include('partials/header') %>
+
+    <title><%= deptName %></title>
+    <script src="https://kit.fontawesome.com/0ed84fb383.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <style>
+      body{
+        background-color: rgb(247, 247, 247);
+      }
+      #nmain{
+        margin: 100px 10px 50px 100px;
+      }
+      .imgd{
+        margin: 30px;
+        border: 3px solid #eee;
+
+      }
+      #nmain h6{
+        display: inline-block;
+      }
+
+      .btnfix{
+        background-color: rgb(15, 223, 223);
+        width: 200px;
+        position: relative;
+        right: 29px;
+        margin-top: 180px;
+      }
+
+      .btn{
+        text-align: start;
+      }
+      .btn:hover{
+        background-color: rgb(15, 223, 223);
+      }
+
+      .cf{
+
+        width: 200px;
+        position: relative;
+        right: 29px;
+        background-color:  rgb(15, 223, 223);
+        font-weight: 500;
+        color: white;
+        padding:10px 5px 10px 5px;
+        border-radius: 5px;
+
+      }
+
+      .fees{
+        margin-left: 10px;
+        font-weight: bold;
+      }
+
+      .card:hover{
+        box-shadow: 1px 1px 6px 1px rgb(15, 223, 223);
+        animation: cardup 0.5s  forwards;
+      }
+
+      .card{
+        margin-top: 50px;
+      }
+
+
+      .htitle{
+        color: rgb(15, 223, 223);
+        padding: 10px 0px;
+        width: 280px;
+        border-bottom: 1px solid rgb(15, 223, 223);
+        font-size: 23px;
+      }
+
+      .hcontent1{
+        font-weight: 600;
+        font-size: 19px;
+        color: rgb(15, 223, 223);
+        margin-bottom: 0px;
+        margin-top: 2px;
+      }
+
+      .hcontent2{
+        margin-top: 5px;
+        color: rgb(180, 176, 176);
+        font-size: 15px;
+        margin-bottom: 0px;
+      }
+
+
+      @keyframes cardup{
+        from{transform: translateY(0px);}
+        to{transform: translateY(-5px);}
+      }
+
+      @media screen and (max-width: 600px) {
+        nav .brand-logo{
+          font-size: 1.5rem;
+        }
+
+
+
+        .imgd{
+          margin-left: 80px;
+          margin-top: 20px;
+        }
+      }
+    </style>
+    <nav style="background-color: rgb(15, 223, 223)">
+      <div class="nav-fixed">
+        <a href="#!" class="brand-logo"><%= deptName %> Department</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">Home</a></li>
+    </ul>
+
+    <!-- ---------------------------------------------------- -->
+    <section id="nmain">
+      <div class=" row">
+        <div class="col s12 m10 l8">
+          <div class="card">
+            <div class="row">
+              <div class="col s12 m6 l2">
+                <img src="/images/doc1.png" class="responsive-img circle imgd" alt="doc1">
+              </div>
+              <div class="col s12 m5 l7 " style="padding-left:20px;">
+                <div class="card-content">
+                  <div class="card-title grey-text text-darken-4">
+                    <h5>Dr Arup Sahu</h5>
+                  </div>
+                  <table>
+                    <tr>
+                      <td><p>Qualification:</p></td>
+                      <td>MBBS</td>
+                    </tr>
+                    <tr>
+                      <td><p>Experience :</p></td>
+                      <td>19 years</td>
+                    </tr>
+                    <tr>
+                      <td><p>Language :</p></td>
+                      <td>English, Tamil, Malayalam</td>
+                    </tr>
+                    <tr>
+                      <td><p>Hospital :</p></td>
+                      <td> Apollo Gleneagles Hospital Limited, Kolkata</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="col s12 m3 l3 xl3 ">
+                <div class="card-content">
+                  <div class="cf ">Consultaion Fee  <span class="fees">&#8377 1200</span> </div>
+                  <a class="waves-effect waves-light btn btnfix" href="/appointment">Fix Appointment <i class="material-icons right">send</i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col s12 l3 offset-l1">
+          <h6 class="htitle">How it works?</h6>
+          <div class="row">
+            <div class="col l2" style="margin-top: 13px;">
+              <i class="fas fa-user-md fa-2x" style="color:rgb(15, 223, 223) ;"></i>
+            </div>
+            <div class="col l9 ">
+              <p class="hcontent1">1. Choose a doctor</p>
+              <p class="hcontent2">Choose your preferred doctor, mode of consultation, preferred date and time.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l2" style="margin-top: 13px;">
+              <i class="fas fa-credit-card fa-2x" style="color:rgb(15, 223, 223) ;"></i>
+            </div>
+            <div class="col l9 ">
+              <p class="hcontent1">2. Pay for consultation</p>
+              <p class="hcontent2">Pay the consultation fees to initiate consultation.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l2" style="margin-top: 13px;">
+              <i class="fas fa-file-medical fa-2x" style="color:rgb(15, 223, 223) ;"></i>
+            </div>
+            <div class="col l9 ">
+              <p class="hcontent1">3. Fill Medical Symptoms</p>
+              <p class="hcontent2">Share Medical symptoms and reports.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l2" style="margin-top: 13px;">
+              <i class="fas fa-file-prescription fa-2x" style="color:rgb(15, 223, 223) ;"></i>
+            </div>
+            <div class="col l9 ">
+              <p class="hcontent1">4. Get Doctor Consultation</p>
+              <p class="hcontent2">Complete your consultation at your requested date & time.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l2" style="margin-top: 13px;">
+              <i class="fas fa-prescription-bottle-alt fa-2x" style="color:rgb(15, 223, 223) ;"></i>
+            </div>
+            <div class="col l9 ">
+              <p class="hcontent1">5. Get Prescription</p>
+              <p class="hcontent2">Get medical prescription or advise for your consultation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

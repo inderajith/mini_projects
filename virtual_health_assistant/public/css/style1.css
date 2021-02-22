@@ -1,0 +1,102 @@
+.car {
+  margin-top: 100px;
+}
+
+#status {
+  padding: 30px;
+}
+
+.mainr {
+  margin-top: 70px;
+}
+.fonts {
+  font-family: "Source Serif Pro", serif;
+}
+
+.fontsh {
+  font-family: "Oswald", sans-serif;
+}
+
+.nline {
+  height: 9px;
+  width: 130px;
+  text-align: center;
+  margin: 0px auto 0 auto;
+  background-color: rgba(101, 108, 109, 0.7);
+  border-radius: 10px;
+}
+
+#newsfeed {
+  margin-top: 100px;
+}
+
+#newsfeed h1 {
+  text-align: center;
+}
+
+.carimg {
+  height: 180px;
+  width: 100px;
+}
+
+#newsfeed .carousel .carousel-item {
+  width: 350px !important;
+  height: 250px !important;
+  background-color: rgba(101, 108, 109, 0.6);
+  color: white;
+  text-align: center;
+  border: 2px solid rgba(101, 108, 109, 0.8);
+  box-shadow: 2px 1px 20px 2px rgb(59, 57, 57);
+  border-radius: 3px;
+}
+
+.carousel-item p {
+  margin-top: 0;
+}
+
+@keyframes slide-up {
+  from {
+    padding-top: 40px;
+    opacity: 0.25;
+    line-height: 40px;
+  }
+  to {
+    padding-top: 0;
+    opacity: 1;
+    line-height: 25px;
+  }
+}
+
+.slide-up {
+  animation: slide-up 4s;
+}
+
+.card-content p {
+  padding-bottom: 10px;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 25px 1px rgba(31, 30, 30, 0.4);
+}
+
+.status {
+  margin: 40px;
+  position: absolute;
+  right: 40px;
+}
+
+.date {
+  position: absolute;
+  right: 66px;
+  top: 11px;
+}
+
+.time {
+  position: absolute;
+  right: 28px;
+  top: 37px;
+}
+
+#doctormain .card-panel:hover {
+  box-shadow: 1px 1px 20px 1px rgba(31, 30, 30, 0.3);
+}

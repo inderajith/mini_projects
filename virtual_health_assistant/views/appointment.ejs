@@ -1,0 +1,108 @@
+
+<%- include("partials/header.ejs") %>
+  <title>Appointment</title>
+  </head>
+  <body>
+    <style>      
+
+      .fm{
+        border: 1px solid grey;          
+        padding: 30px 30px 0 !important;       
+        margin-top: 50px;
+        border-radius: 2px;
+      }
+      .fappointment{
+        margin-left: 100px;
+      }
+
+      .fm:hover{
+        border: 1px solid rgb(15,223,223);
+        box-shadow: 1px 1px 10px 1px rgb(15,223,223);
+      }
+       
+    </style>
+
+
+    <section class="fnavbar">
+
+        <nav class="nav-fixed">
+            <div class="nav-wrapper" style="background: rgb(15,223,223);" >
+              <div class="flexbox">
+                <a href="#" class="brand-logo"><i class="small material-icons icon-control_point pulse">fingerprint</i><i style="display: inline-block;">Appointment Form</i></a>
+              </div>
+
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down " >
+                <li><a href="/" onclick="toggleModal();"><b>Home</b> </a></li>
+
+              </ul>
+          </nav>
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="/" onclick="toggleModal();"><b>Home</b> </a></li>
+          </ul>
+    </section>
+
+    <section class="fappointment">      
+      <div class="cont">
+        <div class="row">
+          <form class="fm col s12 l6">
+            <div class="row">
+              <div class="input-field col s12 l12 ">
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">First Name</label>
+              </div>              
+            </div>
+            <div class="row">
+              <div class="input-field col s12 l12">
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Last Name</label>
+              </div>              
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input disabled value="Dr Kalidas" id="disabled" type="text" class="validate">
+                <label for="disabled">Doctor Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 l12">
+              <input type="text" class="datepicker" placeholder="Date">
+              </div>              
+            </div>
+            <div class="row">
+              <div class="col s12 l12">
+              <input type="text" class="timepicker" placeholder="Time">
+              </div>              
+            </div>
+            <div class="row">
+              <div class="input-field col s12 l12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Description </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s4 l4 push-l8 ">
+                <a class="waves-effect waves-light btn" style="background-color: rgb(15,223,223) ;"><i class="material-icons right"></i>Cancel</a>
+              </div>
+              <div class="col s4 l4 push-l6">
+                <a class="waves-effect waves-light btn" style="background-color: rgb(15,223,223) ;"><i class="material-icons right">gps_fixed</i>Fix</a>                
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- M JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.datepicker').datepicker();
+        $('.timepicker').timepicker();
+      });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+.flexbox{
+    padding-left: 10px;
+}
+
+.nav-wrapper{
+    background: rgb(15, 223, 223);
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: rgb(15, 223, 223);
+}
+
+.page-footer{
+    background: rgb(15, 223, 223);
+}
+ .fform{
+     padding-top: 500px;
+ }

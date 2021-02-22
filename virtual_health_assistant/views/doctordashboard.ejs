@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style1.css" />
+
+    <title>Doctor Dashboard</title>
+  </head>
+  <body>
+    <nav style="background-color: rgb(15,223,223);">
+      <div class="nav-fixed">
+        <a href="#!" class="brand-logo">Doctor's Dashboard</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="/">Home</a></li>
+    </ul>
+
+
+    <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s4"><a href="#test1">search Reports</a></li>
+          <li class="tab col s4"><a class="active" href="#test2">Current Appointments</a></li>
+          <li class="tab col s4"><a href="#test4">Pending Appointments</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div id="test1" class="col s12">
+      <div class="container">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Enter Patient ID</label>
+              <div class="btn waves-effect waves-light" style="background-color: rgb(15,223,223);">Search <i class="medium material-icons right">person_search</i></div>
+            </div>
+
+
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    <div id="test2" class="col s12">
+      <div class="status">
+        <div class="switch">
+          <label>
+            Status
+            <input type="checkbox" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+      <section id="doctormain">
+
+        <div class="container" style="margin-top: 100px">
+          <div class="row">
+            <div class="col s12">
+
+              <div class="row">
+                <div class="col s12">
+                  <div class="card-panel" style="position: relative; margin-bottom: 70px;">
+                    <h5>T Rahul</h5>
+                    <hr class="line">
+                    <p class="date">  <i class="material-icons left teal-text">date_range</i> 15/09/2020</p>
+                    <p class="time"> <i class="material-icons left teal-text">timer</i>12.00AM-1.00PM</p>
+                    <p style="padding-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque totam cumque sit omnis animi quos aut. Quae, deserunt molestiae?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate totam illo voluptates ea. Quia reiciendis ipsam quos. At, asperiores explicabo.</p>
+
+                    </span>
+                  </div>
+                  <div class="card-panel" style="position: relative; margin-bottom: 70px;">
+                    <h5>A Ramesh</h5>
+                    <hr class="line">
+                    <p class="date">  <i class="material-icons left teal-text">date_range</i> 17/09/2020</p>
+                    <p class="time"> <i class="material-icons left teal-text">timer</i>08.00AM-9.00AM</p>
+                    <p style="padding-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque totam cumque sit omnis animi quos aut. Quae, deserunt molestiae?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate totam illo voluptates ea. Quia reiciendis ipsam quos. At, asperiores explicabo.</p>
+
+                    </span>
+                  </div>
+                  <div class="card-panel" style="position: relative; margin-bottom: 70px;">
+                    <h5>P shanmugam</h5>
+                    <hr class="line">
+                    <p class="date">  <i class="material-icons left teal-text">date_range</i> 17/09/2020</p>
+                    <p class="time"> <i class="material-icons left teal-text">timer</i>5.00PM-7.00PM</p>
+                    <p style="padding-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque totam cumque sit omnis animi quos aut. Quae, deserunt molestiae?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate totam illo voluptates ea. Quia reiciendis ipsam quos. At, asperiores explicabo.</p>
+
+                    </span>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="test4" class="col s12">
+      <section id="doctormain">
+        <div class="container" style="margin-top: 100px">
+          <div class="row">
+            <div class="col s12">
+              <div class="row">
+                <div class="col s12">
+                  <div
+                    class="card-panel"
+                    style="position: relative; margin-bottom: 70px"
+                  >
+                    <h5>M Kumaran</h5>
+                    <hr class="line" />
+                    <p class="date">
+                      <i class="material-icons left teal-text">date_range</i>
+                      15/09/2020
+                    </p>
+                    <p class="time">
+                      <i class="material-icons left teal-text">timer</i
+                      >12.00AM-1.00PM
+                    </p>
+                    <p style="padding: 23px 0">
+                      Hello doctor this is kumaran I have been suffering from a
+                      back main for many years ago and done an operation in it but
+                      now also I was able to see some pain so i am scared of it, I
+                      request you to accept my appointment
+                    </p>
+                    <a
+                      class="waves-effect waves-light btn"
+                      style="
+                        position: absolute;
+                        right: 160px;
+                        bottom: 10px;
+                        background-color: #218838;
+                      "
+                      ><i class="material-icons left">thumb_up</i>Accept</a
+                    >
+                    <a
+                      data-target="modal1"
+                      class="btn modal-trigger waves-effect waves-light"
+                      style="
+                        position: absolute;
+                        right: 20px;
+                        bottom: 10px;
+                        background-color: #c82333;
+                      "
+                      ><i class="material-icons left">thumb_down</i>Decline</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Declination reason</h4>
+          <div class="input-field">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea class="materialize-textarea"></textarea>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+            >send</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------------------------------------------------------------- -->
+
+
+
+
+
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+        $('.tabs').tabs();
+        $(".modal").modal();
+
+      });
+    </script>
+  </body>
+</html>

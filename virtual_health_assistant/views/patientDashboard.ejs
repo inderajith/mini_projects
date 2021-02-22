@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- M -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .tabs .tab a:hover, .tabs .tab a.active{
+            color: rgb(15, 223, 223);
+        }
+        .tabs .tab a {
+            color: rgb(15, 223, 223);
+        }
+    </style>
+</head>
+<body>
+    <nav style="background-color: rgb(15,223,223); ">
+        <div class="nav-fixed">
+          <a href="#!" class="brand-logo">Patient's Dashboard</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="./search.html">Problem</a></li>
+            <li><a href="./index.html"style="padding-top: 20px;" class="large material-icons">logout</a></li>
+            <!-- <li><a href="#">current appointments</a></li> -->
+          </ul>
+        </div>
+      </nav>
+  
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="./search.html">Reports</a></li>
+        <li><a href="./index.html" >Logout</a></li>
+        <!-- <li><a href="#">current appointments</a></li> -->
+      </ul>
+
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s4"><a href="#test1">Reports</a></li>
+            <li class="tab col s4"><a class="active" href="#test2">Appointments</a></li>
+            <!-- <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li> -->
+            <li class="tab col s4"><a href="#test4">Meet</a></li>
+          </ul>
+        </div>
+        <div id="test1" class="col s12">
+            <div class="row">
+                <div class="col s4" style="padding: 40px;">
+                    <img src="./images/pexels-cottonbro-3951872.jpg" alt="" class="responsive-img" width="250px" height="300px">
+                </div>
+                <div class="col s8 l7"  style="-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                 box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); margin-top: 60px; height: 63vh;">
+                 <h3 class="header">Patient Report </h3>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit at repellat modi itaque, sint totam molestias dolor nihil quidem voluptate nobis aliquid provident ipsam, amet quibusdam voluptates ab quod? Tempore veniam ut ad odit dolorem alias quod delectus fuga laborum aliquid autem nobis, sapiente soluta natus explicabo harum molestiae ab quisquam tempora! Fugiat quis vitae iure tenetur quam nemo minima excepturi obcaecati fuga ullam. Qui, minus dolores. Debitis ad dolorem ipsa excepturi dolore quisquam quis nobis reprehenderit cupiditate beatae quaerat explicabo, numquam facere nemo quibusdam doloremque? Voluptas deleniti aut sed provident? In magni beatae totam sapiente nihil similique, labore error, quas quae deleniti cumque molestias eveniet eius praesentium illum nostrum soluta! Pariatur sed porro facere libero est optio hic, amet, officia ab quaerat itaque. Nisi quod eum reprehenderit quaerat repudiandae recusandae ea molestiae hic veritatis impedit possimus quam omnis saepe amet magni nemo sapiente dignissimos iusto, tempore et debitis! Sunt.
+                </div>
+            </div>
+        </div>
+        <div id="test2" class="col s12">
+            <section id="doctormain">
+                <div class="container" style="margin-top: 100px">
+                  <div class="row">
+                    <div class="col s12">
+                      <div class="row">
+                        <div class="col s12">
+                          <div
+                            class="card-panel"
+                            style="position: relative; margin-bottom: 70px"
+                          >
+                            <h5>M Kumaran</h5>
+                            <hr class="line" />
+                            <p class="date">
+                              <i class="material-icons left teal-text">date_range</i>
+                              15/09/2020
+                            </p>
+                            <p class="time">
+                              <i class="material-icons left teal-text">timer</i
+                              >12.00AM-1.00PM
+                            </p>
+                            <p style="padding: 23px 0">
+                              Hello doctor this is kumaran I have been suffering from a
+                              back main for many years ago and done an operation in it but
+                              now also I was able to see some pain so i am scared of it, I
+                              request you to accept my appointment
+                            </p>
+                            <a
+                              data-target="modal1"
+                              class="btn modal-trigger waves-effect waves-light"
+                              style="
+                                position: absolute;
+                                right: 20px;
+                                bottom: 10px;
+                                background-color: rgb(15, 223, 223);
+                              "
+                              ><i class="material-icons left">access_time</i>Pending</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </div>
+        <!-- <div id="test3" class="col s12">Test 3</div> -->
+        <div id="test4" class="col s12">Test 4</div>
+      </div>
+
+
+
+
+
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- M JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./script.js"></script>
+</html>
