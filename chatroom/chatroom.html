@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./chatroomstyles.css" />
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Chatroom</title>
+  </head>
+  <body>
+    <!-- container & title -->
+    <div class="container my-4">
+      <h1 class="my-4 text-center">Ninja Chat</h1>
+      <!-- buttons for chatrooms -->
+      <div class="chat-rooms mb-3 text-center">
+        <div class="my-2"></div>
+        <button class="btn" id="general" style="visibility: hidden;">#general</button>
+        <button class="btn" id="gaming" style="visibility: hidden;">#gaming</button>
+        <button class="btn" id="music" style="visibility: hidden;">#music</button>
+        <button class="btn" id="ninjas" style="visibility: hidden;">#ninjas</button>
+      </div>
+      <!-- chat list / window -->
+      <div class="chat-window">
+        <ul class="chat-list list-group"></ul>
+      </div>
+      <!-- new chat form -->
+      <form class="new-chat my-3">
+        <div class="input-group">
+          <div class="input-group-prepend" style="border: 1px solid white; border-radius: 5px;">
+            <div class="input-group-text" style="background: white; color: #e72465; font-weight: 500;border: 0px solid white;">Your message:</div>
+          </div>
+          <input type="text" id="message" class="form-control" required />
+          <div class="input-group-append">
+            <input type="submit" class="btn" style="background: #e72465;border: 1px solid white;" value="send" />
+          </div>
+        </div>
+      </form>
+      <!-- update name form -->
+      <form class="new-name my-3">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" style="background: white; color: #e72465; font-weight: 500;border: 0px solid white;">Update name:</div>
+          </div>
+          <input type="text" id="name" class="form-control" required />
+          <div class="input-group-append">
+            <input type="submit" style="background: #e72465;border: 1px solid white;" class="btn"  value="update"  />
+          </div>
+        </div>
+        <div class="update-mssg"></div>
+      </form>
+    </div>
+
+    <a href="/index.html" class="hbtn">Home</a>
+
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyC2EX9qDoDOkelPxbXuQZptyZKkWcO_Vog",
+        authDomain: "chatroom-11784.firebaseapp.com",
+        databaseURL: "https://chatroom-11784.firebaseio.com",
+        projectId: "chatroom-11784",
+        storageBucket: "chatroom-11784.appspot.com",
+        messagingSenderId: "174190384287",
+        appId: "1:174190384287:web:e6f2f52401ef66347dfeaa",
+      };
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+
+    <script src="scripts/chat.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
