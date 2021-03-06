@@ -1,0 +1,82 @@
+body {
+  background-color: rgba(31, 23, 54, 0.842);
+  text-align: center;
+}
+
+.new1 {
+  color: rgb(224, 187, 138);
+  display: inline-block;
+}
+
+.btn {
+  height: 170px;
+  width: 170px;
+  margin: 4% 2%;
+  border: black solid 5px;
+  border-radius: 15%;
+}
+
+.g {
+  background-color: green;
+  color: green;
+}
+
+.r {
+  background-color: red;
+  color: red;
+}
+
+.y {
+  background-color: yellow;
+  color: yellow;
+  margin-top: 1%;
+}
+
+.b {
+  background-color: blue;
+  color: blue;
+  margin-top: 1%;
+}
+
+.animation {
+  opacity: 0.3;
+  box-shadow: 3px 3px 30px rgb(41, 182, 41);
+}
+
+.startButton {
+  position: absolute;
+  right: 320px;
+  top: 35px;
+  background-color: rgb(224, 187, 138);
+  color: rgb(119, 98, 30);
+  border: none;
+  padding: 6px 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+h3 {
+  position: absolute;
+  display: inline;
+  right: 100px;
+  top: 25px;
+  color: thistle;
+}
+
+.hbtn {
+  border: none;
+  background-color: rgb(224, 187, 138);
+  padding: 5px;
+  color: rgb(119, 98, 30);
+  font-weight: bold;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hbtn:hover {
+  text-decoration: none;
+}
