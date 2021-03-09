@@ -54,13 +54,62 @@
               </div> 
       </section>
 
+      <div class="lineSeparater"></div>
+
+      <section id="menuCard" style="position: relative;">
+        <h1 class="menuCardTitle">Menu Card</h1>
+        <div id="carouselExampleControls" class="carousel slide container p-3 mb-5 menuCardShadow" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="menuCard row">
+                    <div class="col-3">
+                        <div class="dishName">Non-Vegeterian</div>
+                        <img src="./images/nonveg.jpg" class="imgMenuCard" alt="vegImage">
+                        
+                    </div>
+                    <div class="col-lg-9 dishList">
+                        
+                        <ul>
+                            <li>item1</li>
+                            <li>item2</li>
+                            <li>item3</li>
+                            <li>item4</li>
+                            <li>item4</li>
+                            <li>item4</li>
+                            <li>item4</li>
+                            <li>item4</li>
+                            <li>item4</li>
+                            <li>item4</li>
+                            <li>item4</li>
+                            <li>item4</li>
+                            <li>item4</li>
+                            <li>item4</li>
+                            <li>item4</li>
+                            <li>item4</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+              </div>              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next" >
+              <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+              <span class="visually-hidden" >Next</span>
+            </button>
+          </div>
+      </section>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     //nav scroll function starts 
     function checkScroll(){
-        var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+        var startY = $('.navbar').height() * 2; //The point where the navbar changes in px        
         
-        if($(window).scrollTop() > startY){
+        if($(window).scrollTop() > startY){            
             $('.navbar').addClass("bgBlack");
             $('.liColors').css('color', '#3399ff')
         }else{
@@ -70,6 +119,7 @@
     }
     
     if($('.navbar').length > 0){
+        console.log('$(navbar)length: ', $('.navbar').length);
         $(window).on("scroll load resize", function(){
             checkScroll();
         });

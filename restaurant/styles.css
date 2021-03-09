@@ -22,7 +22,7 @@
 
 .bgImg{
     position: relative;
-    top: -100px;
+    top: -270px;
     z-index: -10;
 } 
 
@@ -38,7 +38,7 @@
     position: absolute;
     top: 30%;
     left: 25%;
-    background-color: rgba(134, 128, 128, 0.308);    
+    background-color: rgba(61, 61, 61, 0.308);    
     padding: 30px 80px 30px;
     border-radius: 5px;
     display: flex;
@@ -48,21 +48,105 @@
     
 }
 
+/* menu card section starts  */
+
+.dishName{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.dishList{
+    display: flex;
+}
+
+.dishList li{
+    /* display: inline; */
+    float: left;
+}
+
+.imgMenuCard{
+    height: 200px;
+    width: 230px;
+}
+
+.lineSeparater{
+    background-color: #5f6164;
+    height: 5px;
+    width: 130px;
+    border-radius: 42%;
+    position: relative;
+    top: -160px;
+    left: 40%;
+}
+
+.menuCardTitle{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    position: relative;
+    top: -100px;
+
+}
+
+.menuCardShadow{
+    box-shadow: 1px 1px 10px 1px rgba(82, 82, 82,0.5);
+    border-radius: 5px;
+}
+
+.menuCard{
+    background-color: #fff;
+    height: 250px;
+}
+
+
+
+
+
+
+/* menu card section ends  */
+
+
+
 /* media queries starts*/
+
+/* small size screen  */
 @media only screen and (max-width: 600px){
     .bgImg{
         position: absolute;
         top: -100px;
         z-index: -10;
+        height: 340px;
+        width: 300%;
     }    
+
+    .homeContainer{
+        top: 10% !important;
+        left: 12% !important;
+        padding: 20px 10px;
+    }
+
+    .homeTitle{
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        font-family: 'EB Garamond', serif;
+        text-align: center;
+    }
+
 }
 
+/* medium size screen  */
 @media only screen and (max-width: 980px){
     .bgImg{
         position: absolute;
         top: -100px;
         z-index: -10;
     }    
+
+    .homeContainer{            
+        top: 20%;
+        left: 15%;  
+    }
 }
 
 
