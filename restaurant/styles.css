@@ -1,0 +1,69 @@
+:root {
+    --c1: #3399ff;
+  }
+
+.navUL{
+    width: 30%;
+    margin-right: 60px;        
+}
+
+.bgBlack{
+    background: white;
+}
+
+.liColors{
+    color: white;
+}
+
+.activeSection{
+    /* text-decoration: underline; */
+    font-weight: 700;
+}
+
+.bgImg{
+    position: relative;
+    top: -100px;
+    z-index: -10;
+} 
+
+.homeTitle{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+.homeContainer{    
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    background-color: rgba(134, 128, 128, 0.308);    
+    padding: 30px 80px 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* media queries starts*/
+@media only screen and (max-width: 600px){
+    .bgImg{
+        position: absolute;
+        top: -100px;
+        z-index: -10;
+    }    
+}
+
+@media only screen and (max-width: 980px){
+    .bgImg{
+        position: absolute;
+        top: -100px;
+        z-index: -10;
+    }    
+}
+
+
+/* media queries ends*/

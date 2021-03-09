@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <!-- bootstrap js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- google fonts     -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Restaurant</title>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark " style="color: red;"  >
+        <div class="container-fluid">
+          <a class="navbar-brand liColors" href="#">Name</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+            <ul class="navbar-nav navUL justify-content-evenly " >
+              <li class="nav-item ">
+                <a class="nav-link liColors" href="#">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link liColors" href="#">Menu Card</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link liColors activeSection" href="#">About Us</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link liColors" href="#">Contact Us</a>
+              </li>              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <section id="home">          
+              <img src="./images/homeBg.jpg" class="img-fluid bgImg"  alt="BackgroundImage">
+              <div class="homeContainer ">
+                  <h1 class="homeTitle">Enjoy Delicious food at<br /> Name</h1>
+                  <button type="button" class="btn btn-outline-light homeBtn">Get started</button>
+              </div> 
+      </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    //nav scroll function starts 
+    function checkScroll(){
+        var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+        
+        if($(window).scrollTop() > startY){
+            $('.navbar').addClass("bgBlack");
+            $('.liColors').css('color', '#3399ff')
+        }else{
+            $('.navbar').removeClass("bgBlack");
+            $('.liColors').css('color', 'white')
+        }
+    }
+    
+    if($('.navbar').length > 0){
+        $(window).on("scroll load resize", function(){
+            checkScroll();
+        });
+    }
+    //nav scroll function ends
+
+    const ulLists = document.querySelector('.navUL');    
+    const aLists = ulLists.querySelectorAll('a');    
+    ulLists.addEventListener('click', (e) => {        
+        if(e.target.tagName == 'A'){
+            aLists.forEach(item => {
+                            
+                if(item.innerHTML == e.target.innerHTML){                    
+                    item.classList.add('activeSection');
+                    console.log(e.target);     
+                }
+                else{                                  
+                    item.classList.remove('activeSection');                    
+                }
+            })
+        }
+    });
+
+
+</script>
+
+</body>
+</html>
