@@ -14,6 +14,7 @@
     <!-- google fonts     -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     <title>Restaurant</title>
@@ -28,13 +29,13 @@
           <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
             <ul class="navbar-nav navUL justify-content-evenly " >
               <li class="nav-item ">
-                <a class="nav-link liColors" href="#">Home</a>
+                <a class="nav-link liColors activeSection" href="#">Home</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link liColors" href="#">Menu Card</a>
+                <a class="nav-link liColors" href="#menuCard">Menu Card</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link liColors activeSection" href="#">About Us</a>
+                <a class="nav-link liColors " href="#">About Us</a>
               </li>              
               <li class="nav-item">
                 <a class="nav-link liColors" href="#">Contact Us</a>
@@ -63,30 +64,122 @@
               <div class="carousel-item active">
                 <div class="menuCard row">
                     <div class="col-3">
-                        <div class="dishName">Non-Vegeterian</div>
+                        <div class="dishType">Non-Vegeterian</div>
                         <img src="./images/nonveg.jpg" class="imgMenuCard" alt="vegImage">
                         
                     </div>
                     <div class="col-lg-9 dishList">
                         
-                        <ul>
-                            <li>item1</li>
-                            <li>item2</li>
-                            <li>item3</li>
-                            <li>item4</li>
-                            <li>item4</li>
-                            <li>item4</li>
-                            <li>item4</li>
-                            <li>item4</li>
-                            <li>item4</li>
-                            <li>item4</li>
-                            <li>item4</li>
-                            <li>item4</li>
-                            <li>item4</li>
-                            <li>item4</li>
-                            <li>item4</li>
-                            <li>item4</li>
+                        <ul>                                                                                  
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken rice</span> <span>&#8377 80</span>
+                            </li>                                                                                    
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken briyani</span> <span>&#8377 100</span>
+                            </li>                                                                                    
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken shavarma special</span> <span>&#8377 130</span>
+                            </li>                                                                                    
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chettinadu Chicken gravy </span> <span>&#8377 70</span>
+                            </li>    
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken briyani</span> <span>&#8377 100</span>
+                            </li>  
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken briyani</span> <span>&#8377 100</span>
+                            </li>                                                                                  
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken briyani</span> <span>&#8377 100</span>
+                            </li>   
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken rice</span> <span>&#8377 80</span>
+                            </li>  
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken rice</span> <span>&#8377 80</span>
+                            </li>  
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken rice</span> <span>&#8377 80</span>
+                            </li>     
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken thanthoori</span> <span>&#8377 200</span>
+                            </li>  
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken Dosa</span> <span>&#8377 40</span>
+                            </li>                                                                         
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken Dosa</span> <span>&#8377 40</span>
+                            </li>                                                                         
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken Dosa</span> <span>&#8377 40</span>
+                            </li>                                                                         
+                        </ul>
+                    </div>
+                </div>
+              </div>              
+
+
+              <div class="carousel-item ">
+                <div class="menuCard row">
+                    <div class="col-3">
+                        <div class="dishType">Vegeterian</div>
+                        <img src="./images/veg.jpg" class="imgMenuCard" alt="vegImage">
+                        
+                    </div>
+                    <div class="col-lg-9 dishList">
+                        
+                        <ul>                                                                                  
+                            <li class="dishNamePrice">
+                              <span class="dishName">Fried rice</span> <span>&#8377 80</span>
+                            </li>                                                                                    
+                            <li class="dishNamePrice">
+                              <span class="dishName">Mixed salad</span> <span>&#8377 60</span>
+                            </li>                                                                                    
+                            <li class="dishNamePrice">
+                              <span class="dishName">Fruit salad</span> <span>&#8377 100</span>
+                            </li>                                                                                    
+                            <li class="dishNamePrice">
+                              <span class="dishName">Mushroom Fry</span> <span>&#8377 800</span>
+                            </li>
+                            <li class="dishNamePrice">
+                              <span class="dishName">Fruit salad</span> <span>&#8377 100</span>
+                            </li> 
+                            <li class="dishNamePrice">
+                              <span class="dishName">Fruit salad</span> <span>&#8377 100</span>
+                            </li>                                                                                    
                             
+                                                                                                 
+                        </ul>
+                    </div>
+                </div>
+              </div>              
+
+
+              <div class="carousel-item ">
+                <div class="menuCard row">
+                    <div class="col-3">
+                        <div class="dishType">Pizza</div>
+                        <img src="./images/pizza.jpg" class="imgMenuCard" alt="vegImage">
+                        
+                    </div>
+                    <div class="col-lg-9 dishList">
+                        
+                        <ul>                                                                                  
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken pizza small</span> <span>&#8377 150</span>
+                            </li>                                                                                                                                                                                    
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken pizza medium</span> <span>&#8377 200</span>
+                            </li>                                                                                                                                                                                    
+                            <li class="dishNamePrice">
+                              <span class="dishName">Chicken pizza big</span> <span>&#8377 300</span>
+                            </li>                                                                                                                                                                                    
+                            <li class="dishNamePrice">
+                              <span class="dishName">Mushroom pizza</span> <span>&#8377 130</span>
+                            </li>                                                                                                                                                                                    
+                            <li class="dishNamePrice">
+                              <span class="dishName">Cheese pizza</span> <span>&#8377 180</span>
+                            </li>                                                                                                                                                                                    
                         </ul>
                     </div>
                 </div>
