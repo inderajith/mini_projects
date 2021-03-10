@@ -16,11 +16,16 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0ed84fb383.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="favicons/icons-favicon.ico">    
+
+
     <title>Restaurant</title>
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark " style="color: red;"  >
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark " style="box-shadow: 1px 1px 10px 1px rgba(102, 102, 102,0.3);"  >
         <div class="container-fluid">
           <a class="navbar-brand liColors" href="#">Name</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +40,10 @@
                 <a class="nav-link liColors" href="#menuCard">Menu Card</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link liColors " href="#">About Us</a>
+                <a class="nav-link liColors " href="#aboutUs">About Us</a>
               </li>              
               <li class="nav-item">
-                <a class="nav-link liColors" href="#">Contact Us</a>
+                <a class="nav-link liColors" href="#contactUs">Contact Us</a>
               </li>              
             </ul>
           </div>
@@ -51,14 +56,14 @@
               <img src="./images/homeBg.jpg" class="img-fluid bgImg"  alt="BackgroundImage">
               <div class="homeContainer ">
                   <h1 class="homeTitle">Enjoy Delicious food at<br /> Name</h1>
-                  <button type="button" class="btn btn-outline-light homeBtn">Get started</button>
+                  <button type="button" class="btn btn-outline-light homeBtn"><a href="#menuCard" class="homeBtn">Get started</a></button>
               </div> 
       </section>
 
-      <div class="lineSeparater"></div>
-
+      
       <section id="menuCard" style="position: relative;">
         <h1 class="menuCardTitle">Menu Card</h1>
+        <div class="lineSeparaterMenuCard"></div>
         <div id="carouselExampleControls" class="carousel slide container p-3 mb-5 menuCardShadow" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -196,6 +201,111 @@
           </div>
       </section>
 
+      <section id="aboutUs" class="container">
+        <h1 class="aboutUsTitle">About Us</h1>
+        <div class="lineSeparaterAboutUs"></div>
+        <h3 class="aboutUsDefinition"> Name Restaurants are well known with a substantial gathering of people including families, kids, seniors and business experts. Our benevolent condition is perfect for praising unique events, facilitating a business lunch or assembling for a flavorful dinner with loved ones.</h3>
+        <div style="width: 800px;margin:8% 0% 10% 16%">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner ">
+            <div class="carousel-item active" >
+              <img src="./images/resImg1.jpg" height="400px"  class="d-block w-100" alt="restaurantImage">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/resImg2.jpg" height="400px" class="d-block w-100" alt="restaurantImage">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/resImg3.jpg" height="400px" class="d-block w-100" alt="restaurantImage">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>        
+      </section>
+
+      <div style="background-color: #3399ff;padding-top: 40px;padding-bottom: 5px;"> 
+        <h1 class="contactUsTitle">Contact Us</h1>
+        <div class="lineSeparaterContactUs"></div>
+      <section id="contactUs" class="contactUsContainer" >
+
+        <div style="display: flex;font-family: 'EB Garamond', serif;">
+          <div class="row">
+                <div class="col-sm-4">
+                    <div class="card card-flip contactUsCard">
+                      <div class="card-front text-black bg-white">
+                            <div class="card-body">                                
+                              <h4 class="card-title"><i class="fas fa-map-marker-alt" style="margin-right: 15px;"></i>Address</h4>
+                              <p class="card-text cardText">
+                                762 Avinashi Road,<br />
+                                Neelambur Village,<br />
+                                Coimbatore<br />
+                                Tamil Nadu 641062<br />                                                           
+                              </p>
+                              <h4 class="card-title"><i class="fas fa-envelope" style="margin-right: 15px;"></i>Email</h4>
+                              <p class="card-text cardText">namerestaurant@gmail.com</p>
+                              <h4 class="card-title"><i class="fas fa-phone-alt" style="margin-right: 15px;"></i>Phone</h4>
+                              <p class="card-text cardText">+17 4487365</p>
+                            </div>
+                        </div>
+                        <div class="card-back bg-white">
+                          <div class="card-body">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13756.109724263335!2d76.9547367626178!3d11.01420385832888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDAxJzAwLjUiTiA3NsKwNTcnMjAuOSJF!5e0!3m2!1sen!2sin!4v1615367609722!5m2!1sen!2sin" width="100%" height="300" class="map" allowfullscreen="" loading="lazy"></iframe>
+                              <a href="https://goo.gl/maps/jrof6Gysya17H9tQ6" target="_blank" style="margin-top: 30px;margin-left: 80px;">                                
+                                <button type="button" class="btn btn-outline-secondary"> Go to Location</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>                
+                      </div>
+                    </div>
+                  </div>
+                  <iframe src="./contact.html" height="720" width="1200" style="margin-left: 40px;"></iframe>                  
+      </section>
+
+      <div class="contactUsfooter">
+        <div class="lline"></div>
+        <div class="socialIcons">
+          <i class="fab fa-2x fa-facebook-square"></i>
+          <i class="fab fa-2x fa-twitter-square"></i>
+          <i class="fab fa-2x fa-youtube"></i>              
+          <i class="fab fa-2x fa-google-plus-square"></i>              
+          <i class="fab fa-2x fa-instagram"></i>
+        </div>
+        <div class="rline"></div>
+      </div>
+
+      <div class="copyright">
+        <h4 class="copyrightTitle">Name</h4>
+        <p class="copyrightLabel">copyright &#169; 2021 Name</p>            
+      </div>
+
+    </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     //nav scroll function starts 
@@ -238,6 +348,8 @@
 
 
 </script>
+
+
 
 </body>
 </html>

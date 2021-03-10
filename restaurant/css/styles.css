@@ -1,0 +1,424 @@
+:root {
+    --c1: #3399ff;
+  }
+
+.navUL{
+    width: 30%;
+    margin-right: 60px;        
+}
+
+.bgBlack{
+    background: white;
+}
+
+.liColors{
+    color: white;
+}
+
+.activeSection{
+    /* text-decoration: underline; */
+    font-weight: 700;
+}
+
+.bgImg{
+    position: relative;
+    top: -270px;
+    z-index: -10;
+} 
+
+.homeTitle{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+.homeContainer{    
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    background-color: rgba(61, 61, 61, 0.308);    
+    padding: 30px 80px 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.homeBtn{
+    text-decoration: none;
+    color: white;
+}
+.homeBtn:hover{
+    color: grey ;
+    
+}
+
+/* menu card section starts  */
+
+.dishType{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'EB Garamond', serif;
+}
+
+.dishName{
+    width: 140px;
+    text-align: initial;
+    line-height: 20px;    
+}
+
+.dishList{
+    display: flex;
+}
+
+.dishList ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 240px;     
+    list-style-type: none;
+  }
+.dishList li {           
+    text-align: center;        
+    font-weight: bold;    
+    line-height: 35px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+
+  .dishNamePrice{
+      min-width: 200px;
+      display: flex;          
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Josefin Sans', sans-serif;
+  }
+
+.imgMenuCard{
+    height: 200px;
+    width: 230px;
+}
+
+.lineSeparaterMenuCard{
+    background-color: #5f6164;
+    height: 5px;
+    width: 230px;
+    border-radius: 50px;
+    position: relative;
+    top: -100px;
+    left: 41%;
+}
+
+.menuCardTitle{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    position: relative;
+    top: -100px;
+    font-size: 60px;
+
+}
+
+.menuCardShadow{
+    box-shadow: 1px 1px 10px 1px rgba(82, 82, 82,0.5);
+    border-radius: 5px;
+}
+
+.menuCard{
+    background-color: #fff;
+    height: 250px;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  /* background-size: 100%, 100%; */
+  /* border-radius: 50%; */
+  /* border: 1px solid black; */
+  background-image: none;
+}
+
+#menuCard .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  position: relative;
+  left: 120px;
+  top: 20px;
+  color: black;
+}
+
+#menuCard  .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  position: relative;
+  right: 120px;
+  top: 20px;
+  color: black;
+}
+
+
+
+/* menu card section ends  */
+
+
+/* About us section starts */
+
+
+#aboutUs .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  /* position: relative; */
+  /* left: 120px; */
+  /* top: 20px; */
+  color: white;
+}
+
+#aboutUs  .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  /* position: relative;
+  right: 120px;
+  top: 20px; */
+  color: white;
+}
+
+.aboutUsTitle{
+    font-family: 'EB Garamond', serif;
+    text-align: center;        
+    font-size: 60px;
+    margin-bottom: 20px;
+
+}
+
+
+.lineSeparaterAboutUs{
+    background-color: #5f6164;
+    height: 5px;
+    width: 200px;
+    border-radius: 50px;
+    position: relative;
+    top: -20px;
+    left: 41%;
+}
+
+.aboutUsDefinition{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(63, 63, 63);
+}
+
+
+/* About us section ends */
+
+
+/* Contact us section starts  */
+.contactUsTitle{
+    font-family: 'EB Garamond', serif;
+    text-align: center;        
+    font-size: 60px;    
+    margin-bottom: 20px;    
+    color: white;
+    
+
+}
+
+.contactUsCard{
+    width: 350px;
+    height: 400px;
+    
+    /* border-radius: 10px !important; */
+}
+
+.contactUsContainer{
+    display: flex;      
+    padding: 40px 40px 50px 40px;
+}
+
+
+.lineSeparaterContactUs{
+    background-color: white;
+    height: 5px;
+    width: 220px;
+    border-radius: 50px;
+    position: relative;
+    top: -20px;
+    left: 41%;
+}
+
+.cardText{
+    color: rgb(155, 155, 155);
+    margin-left: 35px;
+}
+
+.card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+  }
+  
+  .card-front {
+    transform: rotateY(0deg);
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  .card-front h4{
+      color: grey;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+    
+  .card-flip:hover .card-back {
+    transform: rotateY(0deg);    
+  }
+
+  .card-flip:hover .map{
+      visibility: visible;
+  } 
+
+
+  .map{
+      visibility: hidden;
+      margin-bottom: 20px;
+  }
+
+ 
+/* Contact us section ends  */
+
+/* footer starts  */
+.contactUsfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.contactUsfooter i {
+    margin-left: 20px;
+}
+
+.lline{
+    height: 2px;
+    background-color: #fff;
+    width: 400px;
+
+}
+
+.rline{
+    height: 2px;
+    background-color: #fff;
+    width: 400px;
+}
+
+.socialIcons{
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.copyright{
+    color: white ;
+    text-align: center;
+}
+
+.copyrightTitle{
+font-weight: bold;
+}
+
+.copyrightLabel{
+color: white;
+font-size: 12px;
+margin-top: 2px;
+}
+/* footer ends  */
+
+
+
+/* media queries starts*/
+
+/* small size screen  */
+@media only screen and (max-width: 600px){
+    .bgImg{
+        position: absolute;
+        top: -100px;
+        z-index: -10;
+        height: 340px;
+        width: 300%;
+    }    
+
+    .homeContainer{
+        top: 10% !important;
+        left: 12% !important;
+        padding: 20px 10px;
+    }
+
+    .homeTitle{
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        font-family: 'EB Garamond', serif;
+        text-align: center;
+    }
+
+}
+
+/* medium size screen  */
+@media only screen and (max-width: 980px){
+    .bgImg{
+        position: absolute;
+        top: -100px;
+        z-index: -10;
+    }    
+
+    .homeContainer{            
+        top: 20%;
+        left: 15%;  
+    }
+}
+
+
+/* media queries ends*/
+
+
+
+
+/* <div class="contactUsfooter">
+            <div class="lline"></div>
+            <div class="socialIcons">
+              <i class="fab fa-2x fa-facebook-square"></i>
+              <i class="fab fa-2x fa-twitter-square"></i>
+              <i class="fab fa-2x fa-youtube"></i>              
+              <i class="fab fa-2x fa-google-plus-square"></i>              
+              <i class="fab fa-2x fa-instagram"></i>
+            </div>
+            <div class="rline"></div>
+          </div>
+
+          <div class="copyright">
+            <h4 class="copyrightTitle">Name</h4>
+            <p class="copyrightLabel">copyright &#169; 2021 Name</p>            
+          </div> */
