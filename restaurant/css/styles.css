@@ -58,6 +58,10 @@
 
 /* menu card section starts  */
 
+.menuCardConatiner{
+    position: relative;
+}
+
 .dishType{
     font-size: 30px;
     font-weight: 500;
@@ -126,7 +130,7 @@
 
 .menuCardShadow{
     box-shadow: 1px 1px 10px 1px rgba(82, 82, 82,0.5);
-    border-radius: 5px;
+    border-radius: 5px;    
 }
 
 .menuCard{
@@ -172,6 +176,11 @@
 
 /* About us section starts */
 
+.abousUsContainer{
+    width: 800px;
+    margin: 5% auto 5% 10%;
+}
+
 
 #aboutUs .carousel-control-next-icon:after
 {
@@ -192,12 +201,20 @@
   color: white;
 }
 
+.aboutUsCaption{
+    background-color: rgba(34, 33, 33, 0.562);
+}
+
 .aboutUsTitle{
     font-family: 'EB Garamond', serif;
     text-align: center;        
     font-size: 60px;
     margin-bottom: 20px;
 
+}
+
+.aboutUsImage{
+    height: 400px;
 }
 
 
@@ -305,10 +322,28 @@
       margin-bottom: 20px;
   }
 
+
+ .contactUsWhole{
+     background-color: #3399ff;
+     padding-top: 40px;
+     padding-bottom: 5px;     
+ }
  
 /* Contact us section ends  */
 
 /* footer starts  */
+
+.contactUsCardConatiner{
+    display: flex;
+    font-family: 'EB Garamond', serif;
+}
+
+.contactHtmlContainer{
+    margin-left: 40px;
+    height:720px;
+    width:1200px;
+}
+
 .contactUsfooter{
     display: flex;
     justify-content: center;
@@ -360,6 +395,89 @@ margin-top: 2px;
 
 /* media queries starts*/
 
+
+
+/* medium size screen  */
+@media only screen and (max-width: 980px){
+    .bgImg{
+        position: absolute;
+        top: -100px;
+        z-index: -10;
+    }    
+
+    .homeContainer{            
+        top: 20%;
+        left: 15%;  
+    }
+
+    .menuCardConatiner{
+        position: relative;
+        top: 600px;
+    }
+
+    .dishList ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 240px;     
+        list-style-type: none;
+      }
+    .dishList li {           
+        text-align: center;        
+        font-weight: bold;    
+        line-height: 25px;
+        margin-left: 30px;
+        margin-bottom: 5px;
+      }
+
+      .dishType{
+        font-size: 20px;        
+    }
+
+    .menuCard{
+        background-color: #fff;
+        height: 250px;
+    }
+
+    .imgMenuCard{
+        height: 200px;
+        width: 220px;
+    }
+
+    .abousUsContainer{
+        width: 700px;
+        height: 100px;
+        margin: 5% auto 5% 2% ;
+        /* margin-right: 100px !important; */
+    }
+
+    .aboutsUsWhole{
+        position: relative;
+        top: 600px;
+    }
+
+    .contactUsWhole{        
+        position: relative;
+        top: 900px;
+    }
+
+    .lline{
+        height: 2px;
+        background-color: #fff;
+        width: 300px;
+    
+    }
+    
+    .rline{
+        height: 2px;
+        background-color: #fff;
+        width: 300px;
+    }
+}
+
+
 /* small size screen  */
 @media only screen and (max-width: 600px){
     .bgImg{
@@ -384,41 +502,158 @@ margin-top: 2px;
         text-align: center;
     }
 
-}
+    .menuCardConatiner{        
+        /* margin-top: 100px; */
+        top: 320px ;        
+    }
 
-/* medium size screen  */
-@media only screen and (max-width: 980px){
-    .bgImg{
-        position: absolute;
-        top: -100px;
-        z-index: -10;
+    .menuCardTitle{
+        font-family: 'EB Garamond', serif;
+        text-align: center;
+        position: relative;
+        top: -40px;
+        font-size: 60px;    
+    }
+
+    .lineSeparaterMenuCard{
+        background-color: #5f6164;
+        height: 5px;
+        width: 230px;
+        border-radius: 50px;
+        position: relative;
+        top: -40px;
+        left: 21%;
+    }
+
+    .menuCard{
+        background-color: #fff;
+        min-height: 600px;
+    }
+    .dishType{
+        /* text-align: center; */
+        font-size: 30px;
+    }
+
+    .imgMenuCard{
+        /* margin-left: 20%; */
+        height: 200px;
+        width: 260px;
+        margin-bottom: 40px;
+        border-radius: 3px;
+    }
+
+    .dishList ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 280px;     
+        list-style-type: none;
+        padding-left: 0px;
+      }
+
+    .dishList li {           
+        text-align: center;        
+        font-weight: bold;    
+        line-height: 25px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }     
+
+    #menuCard .carousel-control-next-icon:after
+    {
+    content: '>';
+    font-size: 40px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    color: black;
+    }
+
+    #menuCard  .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 40px;
+    position: relative;
+    right: 10px;
+    top: 5px;
+    color: black;    
+    }
+
+    .dishName{
+        width: 120px;
+        text-align: initial;
+        line-height: 20px;    
+    }
+
+    .dishNamePrice{
+        min-width: 165px;
+        display: flex;          
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .aboutsUsWhole{
+        position: relative;
+        top: 320px;
+    }
+
+    .lineSeparaterAboutUs{        
+        left: 25%;
+    }
+
+    .aboutUsDefinition{        
+        padding: 1px 10px;        
+    }
+
+    
+    .abousUsContainer{
+        width: 100%;        
+        margin: 0 ;
+    }
+
+    .aboutUsImage{
+        height: 230px;
     }    
 
-    .homeContainer{            
-        top: 20%;
-        left: 15%;  
+    .contactUsWhole{        
+        position: relative;
+        top: 500px;
     }
+
+    .lineSeparaterContactUs{        
+        left: 21%;
+    }
+
+    .contactHtmlContainer{
+        margin-top: 10px;
+        margin-left: 1px;
+        width: 100%;
+        height: 600px;
+    }
+
+    .contactUsContainer{
+        display: block;           
+        padding: 40px 20px 50px 40px;
+    }
+
+    .lline{
+        height: 2px;
+        background-color: #fff;
+        width: 50px;
+    
+    }
+    
+    .rline{
+        height: 2px;
+        background-color: #fff;
+        width: 50px;
+    }
+
 }
 
 
 /* media queries ends*/
 
 
-
-
-/* <div class="contactUsfooter">
-            <div class="lline"></div>
-            <div class="socialIcons">
-              <i class="fab fa-2x fa-facebook-square"></i>
-              <i class="fab fa-2x fa-twitter-square"></i>
-              <i class="fab fa-2x fa-youtube"></i>              
-              <i class="fab fa-2x fa-google-plus-square"></i>              
-              <i class="fab fa-2x fa-instagram"></i>
-            </div>
-            <div class="rline"></div>
-          </div>
-
-          <div class="copyright">
-            <h4 class="copyrightTitle">Name</h4>
-            <p class="copyrightLabel">copyright &#169; 2021 Name</p>            
-          </div> */
